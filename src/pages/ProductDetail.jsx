@@ -43,7 +43,8 @@ const ProductDetail = () => {
       {/* Hero Bölüm */}
       <section
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${product.image})` }}
+        style={{ backgroundImage: `url(${product.images[0]})` }}
+
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-xl text-white text-center">
           <h1 className="text-5xl font-bold mb-4">{product.title}</h1>
