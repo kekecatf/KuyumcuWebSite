@@ -91,15 +91,22 @@ function AnimatedRoutes() {
 
               {/* Ürün kartları */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                {filteredProducts.map((item) => (
-                  <Link
-                    key={item.id}
-                    to={`/product/${item.id}`}
-                    className="hover:scale-105 transition-transform duration-300"
-                  >
-                    <ProductCard {...item} label={item.label} />
-                  </Link>
-                ))}
+                {filteredProducts.map((product) => (
+  <Link
+    key={product.id}
+    to={`/product/${product.id}`}
+    className="hover:scale-105 transition-transform duration-300"
+  >
+    <ProductCard
+      title={product.title}
+      images={product.images}
+      price={product.price}
+      oldPrice={product.oldPrice}
+      discount={product.discount}
+    />
+  </Link>
+))}
+
               </div>
             </motion.div>
           }

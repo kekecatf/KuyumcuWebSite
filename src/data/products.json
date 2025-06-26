@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "14 Ayar Altın Halka Küpe",
-    "image": "/images/halka-kupe.jpg",
+    "images": ["/images/halka-kupe.jpg","/images/halka-kupe2.jpg"],
     "price": 2850,
     "category": "küpe",
     "stock": 10,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "Taşlı Altın Kolye",
-    "image": "/images/tasli-kolye.jpg",
+    "images": ["/images/tasli-kolye.jpg","/images/tasli-kolye2.jpg"],
     "price": 4200,
     "category": "kolye",
     "stock": 5,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "Minimal Yüzük",
-    "image": "/images/minimal-yuzuk.jpg",
+    "images": ["/images/minimal-yuzuk.jpg","/images/minimal-yuzuk2.jpg"],
     "price": 1750,
     "category": "yüzük",
     "stock": 7,
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "Beyaz Altın Küpe",
-    "image": "/images/beyaz-altin-kupe.jpg",
+    "images": ["/images/beyaz-altin-kupe.jpg","/images/beyaz-altin-kupe2.jpg","/images/beyaz-altin-kupe3.jpg"],
     "price": 3200,
     "category": "küpe",
     "stock": 3,

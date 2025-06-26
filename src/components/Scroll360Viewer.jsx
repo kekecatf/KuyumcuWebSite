@@ -4,7 +4,6 @@ const Scroll360Viewer = ({ folderPath, totalFrames }) => {
   const [frame, setFrame] = useState(1);
   const [startY, setStartY] = useState(0);
 
-  // Scroll başlama pozisyonunu ayarla
   useEffect(() => {
     const section = document.getElementById("scroll-360-section");
     if (section) {
@@ -23,7 +22,7 @@ const Scroll360Viewer = ({ folderPath, totalFrames }) => {
         return;
       }
 
-      const maxScroll = totalFrames * 60; // Frame başına 80px scroll alanı
+      const maxScroll = totalFrames * 60;
       const effectiveScroll = Math.min(scrollTop - startY, maxScroll);
       const scrollFraction = effectiveScroll / maxScroll;
 
@@ -44,12 +43,11 @@ const Scroll360Viewer = ({ folderPath, totalFrames }) => {
       id="scroll-360-section"
       className="relative bg-yellow-50 transition-colors duration-500"
     >
-      <div className="sticky top-0 z-10 min-h-[500px] flex flex-col justify-center items-center">
-        
+      <div className="sticky top-0 z-10 min-h-[700px] flex flex-col justify-center items-center">
         <img
           src={`${folderPath}/frame${frame}.jpg`}
           alt={`frame ${frame}`}
-          className="w-[400px] h-[400px] object-contain rounded-xl shadow"
+          className="w-[600px] h-[600px] object-contain rounded-xl shadow-lg"
         />
       </div>
 
