@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "14 Ayar Altın Halka Küpe",
+    "image": "/images/halka-kupe.jpg",
+    "price": 2850,
+    "category": "küpe",
+    "stock": 10,
+    "description": "Günlük kullanıma uygun, sade ve zarif halka küpe modeli.",
+    "folder": "halka-kupe",
+    "label": "Yeni"
+  },
+  {
+    "id": 2,
+    "title": "Taşlı Altın Kolye",
+    "image": "/images/tasli-kolye.jpg",
+    "price": 4200,
+    "category": "kolye",
+    "stock": 5,
+    "description": "İnce işçilikle hazırlanmış, taş detaylı 14 ayar altın kolye.",
+    "folder": "tasli-kolye",
+    "label": ""
+  },
+  {
+    "id": 3,
+    "title": "Minimal Yüzük",
+    "image": "/images/minimal-yuzuk.jpg",
+    "price": 1750,
+    "category": "yüzük",
+    "stock": 7,
+    "description": "Modern tasarıma sahip minimal 14 ayar altın yüzük.",
+    "folder": "minimal-yuzuk",
+    "label": ""
+  },
+  {
+    "id": 4,
+    "title": "Beyaz Altın Küpe",
+    "image": "/images/beyaz-altin-kupe.jpg",
+    "price": 3200,
+    "category": "küpe",
+    "stock": 3,
+    "description": "Özel günlerde zarif görünüm sağlayan beyaz altın küpe.",
+    "folder": "beyaz-altin-kupe",
+    "label": "Özel Seçim"
+  }
+]
