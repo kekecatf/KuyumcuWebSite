@@ -72,8 +72,8 @@ const ProductCard = ({ title, images, price, oldPrice, discount }) => {
               key={index}
               className={`w-3 h-3 rounded-full border transition-all duration-300 ${
                 index === currentImageIndex
-                  ? "bg-black border-black"
-                  : "bg-white border-black"
+                  ? "bg-yellow-700 border-yellow-700"
+                  : "bg-white border-yellow-700"
               }`}
             />
           ))}
