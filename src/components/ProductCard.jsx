@@ -44,7 +44,7 @@ const ProductCard = ({ title, images, price, oldPrice, discount }) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleLeave}
     >
-      <div className="relative h-72 w-full overflow-hidden">
+      <div className="relative h-[576px] w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={images[currentImageIndex]}
