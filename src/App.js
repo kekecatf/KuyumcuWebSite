@@ -137,6 +137,7 @@ function AnimatedRoutes() {
                       price={product.price}
                       oldPrice={product.oldPrice}
                       discount={product.discount}
+                      label={product.label}
                     />
                   </Link>
                 ))}

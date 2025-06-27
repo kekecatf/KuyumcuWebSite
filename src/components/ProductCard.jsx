@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const ProductCard = ({ title, images, price, oldPrice, discount }) => {
+const ProductCard = ({ title, images, price, oldPrice, label }) => {
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const cardRef = useRef(null);
   const touchStartX = useRef(0);
@@ -58,12 +59,15 @@ const ProductCard = ({ title, images, price, oldPrice, discount }) => {
           />
         </AnimatePresence>
 
-        {/* İndirim etiketi */}
-        {discount && (
-          <div className="absolute top-2 left-2 bg-red-700 text-white text-xs px-2 py-1 rounded-full z-10">
-            %{discount} İNDİRİM
+        {/* Label etiketi */}
+  {label && (
+          <div className="absolute bottom-0 left-0 bg-yellow-700 text-white text-sm px-3 py-1 rounded-tr-xl">
+            {label}
           </div>
         )}
+
+
+
 
         {/* Dot göstergeleri */}
         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
@@ -86,7 +90,7 @@ const ProductCard = ({ title, images, price, oldPrice, discount }) => {
           {title}
         </h2>
         <div className="mt-2">
-          <p className="text-red-600 text-lg font-bold">
+          <p className="text-yellow-600 text-lg font-bold">
             ₺{price.toLocaleString()}
           </p>
           {oldPrice && (
