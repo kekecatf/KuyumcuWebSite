@@ -44,7 +44,7 @@ const Scroll360Viewer = ({ folderPath, totalFrames }) => {
   className="relative bg-yellow-50 transition-colors duration-500"
 >
   <div className="sticky top-24 z-10 min-h-[700px] flex flex-col justify-center items-center px-4">
-    <div className="bg-white rounded-2xl shadow-xl p-6 max-w-[800px] w-full">
+    <div className="bg-yellow-100 rounded-2xl shadow-xl p-6 max-w-[800px] w-full">
       <img
         src={`${folderPath}/frame${frame}.jpg`}
         alt={`frame ${frame}`}

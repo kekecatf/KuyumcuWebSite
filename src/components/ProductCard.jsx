@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ProductCard = ({ title, images, price, oldPrice, label }) => {
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const cardRef = useRef(null);
   const touchStartX = useRef(0);
@@ -60,14 +59,12 @@ const ProductCard = ({ title, images, price, oldPrice, label }) => {
         </AnimatePresence>
 
         {/* Label etiketi */}
-  {label && (
-          <div className="absolute bottom-0 left-0 bg-yellow-700 text-white text-sm px-3 py-1 rounded-tr-xl">
+        {label && (
+          <div className="absolute bottom-0 left-0 bg-yellow-700 text-white text-sm px-3 py-1 rounded-tr-xl shadow-sm">
+
             {label}
           </div>
         )}
-
-
-
 
         {/* Dot göstergeleri */}
         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">

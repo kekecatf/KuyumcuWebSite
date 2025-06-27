@@ -11,6 +11,8 @@ import React, { useState, useEffect, useRef } from "react";
 import productsData from "./data/products.json";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
+
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -97,8 +99,9 @@ function AnimatedRoutes() {
                   <div className="flex justify-center mb-4">
                     <div className="relative w-72">
                       <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-yellow-700">
-                        🔍
-                      </span>
+  <FiSearch className="w-5 h-5" />
+</span>
+
                       <input
                         type="text"
                         placeholder="Ürün ara..."
