@@ -40,20 +40,23 @@ const Scroll360Viewer = ({ folderPath, totalFrames }) => {
 
   return (
     <section
-      id="scroll-360-section"
-      className="relative bg-yellow-50 transition-colors duration-500"
-    >
-      <div className="sticky top-0 z-10 min-h-[700px] flex flex-col justify-center items-center">
-        <img
-          src={`${folderPath}/frame${frame}.jpg`}
-          alt={`frame ${frame}`}
-          className="w-[600px] h-[600px] object-contain rounded-xl shadow-lg"
-        />
-      </div>
+  id="scroll-360-section"
+  className="relative bg-yellow-50 transition-colors duration-500"
+>
+  <div className="sticky top-24 z-10 min-h-[700px] flex flex-col justify-center items-center px-4">
+    <div className="bg-white rounded-2xl shadow-xl p-6 max-w-[800px] w-full">
+      <img
+        src={`${folderPath}/frame${frame}.jpg`}
+        alt={`frame ${frame}`}
+        className="w-full aspect-square object-contain rounded-xl transition-transform duration-300"
+      />
+    </div>
+  </div>
 
-      {/* Scroll alanını dinamik olarak frame sayısına göre ayarla */}
-      <div style={{ height: `${totalFrames * 80}px` }} />
-    </section>
+  {/* Scroll boşluğu */}
+  <div style={{ height: `${totalFrames * 80}px` }} />
+</section>
+
   );
 };
 

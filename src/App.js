@@ -68,6 +68,8 @@ function AnimatedRoutes() {
               <h1 className="text-5xl font-extrabold text-yellow-800 text-center mb-10 tracking-tight">
                 Lina Gold Vitrini
               </h1>
+              <div className="border-t border-yellow-300 w-full max-w-5xl mx-auto mb-8"></div>
+
 
               {/* Sabit olmayan filtre barı */}
               <div className="sticky top-0 z-20 overflow-hidden">
@@ -141,7 +143,7 @@ function AnimatedRoutes() {
               </div>
 
               {/* İletişim Bölümü */}
-              <div className="mt-20 text-center border-t border-yellow-300 pt-12">
+              <div className="mt-20 text-center border-t border-yellow-300 pt-12 pb-12">
                 <h2 className="text-3xl font-bold text-yellow-800 mb-4">
                   Bize Ulaşın
                 </h2>

@@ -44,7 +44,6 @@ const ProductDetail = () => {
       <section
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `url(${product.images[0]})` }}
-
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-xl text-white text-center">
           <h1 className="text-5xl font-bold mb-4">{product.title}</h1>
@@ -59,30 +58,27 @@ const ProductDetail = () => {
         </button>
       </section>
       {/* Aşağı Kaydırın İfadesi */}
-<div className="absolute bottom-6 inset-x-0 flex justify-center animate-bounce">
-  <div className="flex flex-col items-center text-white text-sm">
-    <span className="bg-black bg-opacity-40 px-3 py-1 rounded-full text-xs sm:text-sm">
-      aşağı kaydırın
-    </span>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-5 h-5 mt-1 text-white"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </div>
-</div>
-
-
-
+      <div className="absolute bottom-6 inset-x-0 flex justify-center animate-bounce">
+        <div className="flex flex-col items-center text-white text-sm">
+          <span className="bg-black bg-opacity-40 px-3 py-1 rounded-full text-xs sm:text-sm">
+            aşağı kaydırın
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 mt-1 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </div>
 
       {/* Ürün Açıklaması */}
       <motion.section
@@ -93,6 +89,7 @@ const ProductDetail = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
+        <div className="border-t border-yellow-300 w-full max-w-5xl mx-auto mb-8"></div>
         <h2 className="text-2xl md:text-3xl font-bold text-yellow-800 mb-4">
           Ürün Açıklaması
         </h2>
@@ -103,6 +100,7 @@ const ProductDetail = () => {
 
       {/* 360 Ürün Görünümü */}
       <Scroll360Viewer folderPath={`/360/${product.folder}`} totalFrames={36} />
+      
 
       {/* Teknik Detaylar */}
       <motion.section
@@ -112,6 +110,7 @@ const ProductDetail = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
+        <div className="border-t border-yellow-300 w-full max-w-5xl mx-auto mb-8"></div>
         <div className="max-w-4xl mx-auto px-4 space-y-4">
           <h2 className="text-3xl font-bold text-yellow-800">Detaylar</h2>
           <ul className="text-gray-700 list-disc list-inside text-lg">
